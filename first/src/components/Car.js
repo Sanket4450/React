@@ -1,10 +1,10 @@
-import Bugatti from './Bugatti'
+import BugattiCars from './Bugatti'
 
 export default function Car() {
     return (
-        <div>
-            <h1 className='car-title'>Welcome to the Car's Show-room</h1>
-            <Bugatti />
-        </div>
+        <section>
+            <h1 style={{ textAlign: 'center' }}>Welcome to SK Cars</h1>
+            <BugattiCars />
+        </section>
     )
 }

@@ -1,10 +1,19 @@
-let price = 410000000
+import { cars } from '../data/cars'
 
-export default function Bugatti() {
+import React from 'react'
+
+function Bugatti({ imgURL }) {
     return (
-        <div>
-            <h1 className="bugatti-car">I am Bugatti Chiron</h1>
-            <p>My price is {price}</p>
+        <img src={imgURL} alt='Bugatti' style={{ width: '20vw', borderRadius: 2 }} />
+    )
+}
+
+export default function BugattiCars() {
+    return (
+        <div style={{ display: 'flex', justifyContent: 'space-around', backgroundColor: '#f5f5f5', padding: '40px 0' }}>
+            {
+                cars.map(car => <Bugatti imgURL={car.image} />)
+            }
         </div>
     )
 }
