@@ -6,19 +6,19 @@ export const cars = [
         price: 41
     },
     {
-        id: 1,
+        id: 2,
         image: "https://www.hardwarezone.com.sg/thumbs/544049/og.jpg",
         color: "Gray",
         price: 32
     },
     {
-        id: 1,
+        id: 3,
         image: "https://www.alainclass.com/wp-content/uploads/2020/09/sdh.jpg",
         color: "Black",
         price: 36
     },
     {
-        id: 1,
+        id: 4,
         image: "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fc.ndtvimg.com%2F2022-04%2Fgm76419_bugatti-chiron-super-sport_625x300_05_April_22.jpg&w=750&q=75",
         color: "Silver",
         price: 27
