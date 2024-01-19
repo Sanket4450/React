@@ -11,5 +11,10 @@ export function Timer({ initial, increment }) {
         return () => clearTimeout(timer)
     }, [count])
 
-    return <h1 style={{ fontFamily: 'sans-serif', marginLeft: 10 }}>The Page is rendered {count} times</h1>
+    if (count <= (initial + 1) * 100) {
+        return (
+            <h1 style={{ fontFamily: 'sans-serif', marginLeft: 10 }}>The number is {count}</h1>
+        )
+    }
+    return null
 }
