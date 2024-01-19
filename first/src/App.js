@@ -1,6 +1,7 @@
 import Car from './components/Car'
 import { Timer } from './components/Timer'
 import { User } from './components/User'
+import { MyForm } from './components/Form'
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
             <Timer initial={0} increment={10} />
             <Timer initial={1000} increment={5} />
             <User />
+            <MyForm />
         </>
     )
 }

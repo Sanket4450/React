@@ -1,0 +1,49 @@
+#myForm {
+    background-color: rgb(41, 50, 58);
+    color: white;
+    font-family: Verdana;
+    padding: 20px;
+}
+
+.textField {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 20%;
+    font-size: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+.textField:focus {
+    outline: none;
+    width: 98.5%;
+    transition-duration: 0.5s;
+}
+
+.numberField {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 20%;
+    font-size: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+.numberField:focus {
+    outline: none;
+}
+
+#submit {
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    font-size: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+#submit:hover {
+    background-color: rgb(230, 230, 230);
+}
