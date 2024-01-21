@@ -1,0 +1,16 @@
+.board {
+    width: 36vmax;
+    height: 36vmax;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 11vmax 11vmax 11vmax;
+    grid-template-rows: 11vmax 11vmax 11vmax;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.status {
+    font-family: Verdana;
+    font-size: 2vmax;
+    text-align: center;
+}

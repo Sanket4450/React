@@ -1,0 +1,9 @@
+.box {
+    font-family: Verdana;
+    font-size: 6vmax;
+    text-align: center;
+    padding: 1vmax 0;
+    cursor: default;
+    border: 0.4vmax solid black;
+    border-radius: 10px;
+}
