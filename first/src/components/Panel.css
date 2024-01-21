@@ -1,0 +1,29 @@
+.panel {
+    background-color: rgb(41, 50, 58);
+    color: white;
+    font-family: Verdana;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.panel-title {
+    font-size: 2.5vw;
+    margin: 10px 0;
+}
+
+.panel-description {
+    font-size: 1vmax;
+    margin: 10px 0;
+}
+
+.show-button {
+    background-color: white;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.show-button:hover {
+    background-color: rgb(230, 230, 230);
+}

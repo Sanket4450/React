@@ -18,7 +18,7 @@ export function MyForm() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault() // to prevent browser's default behavior on form submission
-        console.log(inputs)
+        // api call with form data
     }
 
     return (
