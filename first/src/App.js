@@ -3,6 +3,8 @@ import { Timer } from './components/Timer'
 import { User } from './components/User'
 import { MyForm } from './components/Form'
 import { Accordion } from './components/Accordion'
+import { Profile } from './components/Profile'
+import { Todos } from './components/Todo'
 
 export default function App() {
     return (
@@ -14,6 +16,8 @@ export default function App() {
             <User />
             <MyForm />
             <Accordion />
+            <Profile />
+            <Todos />
         </>
     )
 }

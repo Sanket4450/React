@@ -1,0 +1,44 @@
+.profile {
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 5vw;
+}
+
+.component1 {
+    background-color: rgb(40, 40, 40);
+    padding: 5vw;
+}
+
+.component2 {
+    background-color: rgb(80, 80, 80);
+    padding: 5vw;
+}
+
+.component3 {
+    background-color: rgb(120, 120, 120);
+    padding: 5vw;
+}
+
+.component4 {
+    background-color: rgb(160, 160, 160);
+    padding: 5vw;
+}
+
+.change-text-button {
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.change-text-button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}

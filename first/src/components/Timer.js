@@ -11,7 +11,7 @@ export function Timer({ initial, increment }) {
         return () => clearTimeout(timer)
     }, [count])
 
-    if (count <= ((initial + 1) * increment) * 10) {
+    if (count <= (initial + increment * 50)) {
         return (
             <h1 style={{ fontFamily: 'sans-serif', marginLeft: 10 }}>The number is {count}</h1>
         )
