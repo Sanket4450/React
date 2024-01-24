@@ -7,7 +7,7 @@ export function Profile() {
     const [user] = useState('Sanket Talaviya')
     const profileRef = useRef(null)
 
-    function abc() {
+    function changeTextToYellow() {
         profileRef.current.style.color = 'yellow' // perform any JS DOM action to the reference element
     }
 
@@ -17,7 +17,7 @@ export function Profile() {
                 <h1>Profile</h1>
                 <h1>{user}</h1>
                 <Component1 user={user} />
-                <button className='change-text-button' onClick={abc}>Change Text to Yellow</button>
+                <button className='change-text-button' onClick={changeTextToYellow}>Change Text to Yellow</button>
             </div>
         </ProfileContext.Provider>
     )

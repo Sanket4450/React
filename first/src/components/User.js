@@ -1,16 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { users } from "../data/users";
 import "./User.css"
 import { setCursorPointer } from '../utils/pointer'
 
 export function User() {
     const [user, setUser] = useState(users[0])
-
-    useEffect(() => {
-        return () => {
-            console.log('Component unmounted')
-        }
-    })
 
     const incrementAge = () => {
         setUser({
