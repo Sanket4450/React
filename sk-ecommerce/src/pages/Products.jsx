@@ -1,10 +1,8 @@
-import { CategoryBar } from '../components/Product'
-import { ProductBar } from '../components/Product'
+import { ProductBar } from '../components/products'
 
 export function Products() {
     return (
         <div>
-            <CategoryBar />
             <ProductBar />
         </div>
     )

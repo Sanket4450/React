@@ -1,7 +1,7 @@
+import { useState, useEffect } from "react"
 import { Product } from "./Product"
 import { products } from "../../data/products"
 import { chunkArray } from '../../utils/chunkArray'
-import { useState, useEffect } from "react";
 
 export function ProductBar() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -15,7 +15,7 @@ export function ProductBar() {
     }, [])
 
     let chunkProducts = []
-    
+
     if (screenWidth >= 1080) {
         chunkProducts = chunkArray(products, 5)
     }
@@ -39,7 +39,7 @@ export function ProductBar() {
                     <div key={chunkIndex} className="flex justify-around mt-8">
                         {
                             chunk.map(product => (
-                                <Product key={product.id} name={product.name} price={product.price} image={product.image} />
+                                <Product key={product.id} id={product.id} name={product.name} price={product.price} image={product.image} stars={product.stars} sold={product.sold} />
                             ))
                         }
                     </div>

@@ -1,4 +1,4 @@
-import { CategoryBar } from "../components/Category"
+import { CategoryBar } from "../components/categories"
 
 export function Categories() {
     return (
