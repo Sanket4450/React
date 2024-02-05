@@ -8,21 +8,21 @@ import { NotFound } from './pages/NotFound'
 import { NavBar } from './components/ui/NavBar'
 
 function App() {
-  return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="products">
-          <Route index element={<Products />} />
-          <Route path=":id" element={<Product />} />
-        </Route>
-        <Route path="/categories" element={<Categories />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
-  )
+    return (
+        <>
+            <NavBar />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='products'>
+                    <Route index element={<Products />} />
+                    <Route path=':id' element={<Product />} />
+                </Route>
+                <Route path='/categories' element={<Categories />} />
+                <Route path='/about' element={<About />} />
+                <Route path='*' element={<NotFound />} />
+            </Routes>
+        </>
+    )
 }
 
 export default App
