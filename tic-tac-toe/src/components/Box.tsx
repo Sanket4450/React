@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Box.css'
 
 interface BoxProps {
