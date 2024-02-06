@@ -12,6 +12,21 @@ export function Counter() {
     const dispatch = useDispatch()
     const [inputValue, setInputValue] = useState(0)
 
+    function handleDecrement() {
+        if (count > 0) {
+            dispatch(decrement())
+        }
+    }
+
+    function handleDecrementByAmount(decValue) {
+        if (count - decValue >= 0) {
+            dispatch(decrementByAmount(Number(inputValue)))
+        }
+        else {
+            dispatch(decrementByAmount(count))
+        }
+    }
+
     return (
         <div style={{ textAlign: 'center' }}>
             <button
@@ -22,7 +37,7 @@ export function Counter() {
             <span style={{ fontSize: '2vw', padding: '0 1vw' }}>{count}</span>
             <button
                 style={{ fontSize: '2vw', padding: '0 1vw' }}
-                onClick={() => dispatch(decrement())}>
+                onClick={handleDecrement}>
                 -
             </button>
             <h1
@@ -65,7 +80,7 @@ export function Counter() {
                     padding: '10px 15px',
                     margin: '0 10px',
                 }}
-                onClick={() => dispatch(decrementByAmount(Number(inputValue)))}>
+                onClick={() => handleDecrementByAmount(Number(inputValue))}>
                 -
             </button>
         </div>
