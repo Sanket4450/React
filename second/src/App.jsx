@@ -1,5 +1,9 @@
+import { Counter } from "./components/Counter"
+
 function App() {
-    return <h1>Sanket Talaviya</h1>
+    return (
+        <Counter />
+    )
 }
 
 export default App
